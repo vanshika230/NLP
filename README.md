@@ -37,8 +37,9 @@ RepeatVector Layer: To match the desired output sequence length, this layer repe
 
 LSTM Layer (with return_sequences=True): Similar to the previous LSTM layer, this layer is configured to return sequences instead of a single output. It aids in decoding the input representation and generating the output sequence, contributing to the accurate translation of the text.
 
+Dense Layer: The final dense layer applies a softmax activation function to produce a probability distribution over the Hindi vocabulary. It selects the most likely Hindi word for each position in the output sequence, ensuring the generated translations are linguistically appropriate.
+
 Model Saving
 Once the model is trained, you can save it for future use. You can accomplish this by using the save() method, which saves the entire model to a file. To save the model, simply call model.save('NMTmodel'). 
 
 
-Dense Layer: The final dense layer applies a softmax activation function to produce a probability distribution over the Hindi vocabulary. It selects the most likely Hindi word for each position in the output sequence, ensuring the generated translations are linguistically appropriate.
