@@ -139,3 +139,8 @@ We compile the model using the Adam optimizer and the mean squared error (MSE) l
 Results:
 The training process shows a decreasing loss value, indicating that the model is learning the patterns in the data. After training, the model can be used to make predictions on the testing data.
 
+Interactive Web Interface:
+The web application is built using the Streamlit library, which provides a user-friendly interface for interacting with the model. Users can enter a stock ticker symbol in a text input field to retrieve the corresponding historical data and predictions. The descriptive statistics and visualizations are dynamically updated based on user input.
+
+Visualizations:
+The application presents two visualizations of the stock price data. Firstly, it displays a line chart comparing the closing price of the stock over time, along with the 100-day and 200-day moving averages. This chart helps users visualize the trends and patterns in the stock price data. Secondly, the application plots the original stock prices and the predicted stock prices on another line chart. This allows users to compare the actual prices with the model's predictions.
