@@ -94,10 +94,13 @@ The application presents two visualizations of the stock price data. Firstly, it
 
 ## 4. Alzheimer Detection from Live Speech 
 Youtube link :- https://www.youtube.com/watch?v=Nbx6qjv7dMM&ab_channel=Vanshika
+
 Tech stack:- StanfordNLP, spaCy, NLTK, Python, Tensorflow 
+
 Neurocare is an app that aims to detect and provide support for Alzheimer's disease through early detection and wellness features.Using a voice memo recorded by the patient, Neurocare's trained model classifies speech as either AD (Alzheimer's disease) or non-AD. This classification is based on lexical analysis of grammar and pause durations. The model calculates a mental state examination score, aiding in reaching a diagnosis.
 
 ## 5. Oizys- Mental Health Chatbot
+
 Youtube Link :- https://www.youtube.com/watch?v=W1e6aKjJFLo&ab_channel=Vanshika
 
 Tech stack:- Python, Dialogflow, Node.js
