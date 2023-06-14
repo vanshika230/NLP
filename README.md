@@ -1,48 +1,35 @@
 # NLP
-# 1. Neural Machine Translation 
+
+## 1. Neural Machine Translation 
 Link :- https://github.com/vanshika230/LGMVIP_DataScienceIntern/blob/main/NMT.ipynb
 
 Tech Stack :- Python, ScikitLearn, Tensorflow
 
-Implemented Sequential LSTM to translate dialogues from English to Hindi language, achieving accuracy of 89%.
-
-Leveraged analytical techniques to handle pre-processing datasets and implemented regularization techniques
-increasing performance by 8%
-
 --> About the project :- 
 
-The code imports the necessary libraries and modules for data processing and modeling.
+The code imports the necessary libraries and modules for data processing and modeling.Some initial data exploration and cleaning operations are performed, such as filtering data from a specific source, dropping columns, removing null values, converting text to lowercase, and applying regular expressions for text cleaning.
 
-It reads a CSV file containing English and Hindi sentence pairs using the pandas library.
-
-Some initial data exploration and cleaning operations are performed, such as filtering data from a specific source, dropping columns, removing null values, converting text to lowercase, and applying regular expressions for text cleaning.
-
-The code calculates the maximum sequence length for both English and Hindi sentences.
-
-Unique English and Hindi words are extracted and stored in separate lists.
-
-Tokenizers are created using Keras to convert the sentences into sequences of integers.
-
-The sequences are generated for both English and Hindi sentences using the tokenizers.
-
-The word indices for Hindi words are obtained from the tokenizer.
+The code calculates the maximum sequence length for both English and Hindi sentences. Unique English and Hindi words are extracted and stored in separate lists.Tokenizers are created using Keras to convert the sentences into sequences of integers.
 
 Model Architecture
+  
+    Embedding Layer: This layer plays a crucial role in mapping the input words to dense vectors of a fixed size. 
+    By representing words in a continuous vector space, it captures semantic relationships, enabling better translation performance.
 
-The NMT model follows a sequential architecture, which incorporates several essential layers to handle text translation. Here are the key components of the model:
+    LSTM (Long Short-Term Memory) Layer: LSTM is a type of recurrent neural network layer that excels at capturing long-range dependencies in the input sequence.     
+    It processes the input word vectors and learns to encode contextual information, improving translation accuracy.
 
-Embedding Layer: This layer plays a crucial role in mapping the input words to dense vectors of a fixed size. By representing words in a continuous vector space, it captures semantic relationships, enabling better translation performance.
+    RepeatVector Layer: To match the desired output sequence length, this layer repeats the output of the previous LSTM layer multiple times. 
+    This repetition enables the model to generate a sequence of words based on the input, facilitating the translation process.
+    
+    LSTM Layer (with return_sequences=True): Similar to the previous LSTM layer, this layer is configured to return sequences instead of a single output. 
+    It aids in decoding the input representation and generating the output sequence, contributing to the accurate translation of the text.
 
-LSTM (Long Short-Term Memory) Layer: LSTM is a type of recurrent neural network layer that excels at capturing long-range dependencies in the input sequence. It processes the input word vectors and learns to encode contextual information, improving translation accuracy.
-
-RepeatVector Layer: To match the desired output sequence length, this layer repeats the output of the previous LSTM layer multiple times. This repetition enables the model to generate a sequence of words based on the input, facilitating the translation process.
-
-LSTM Layer (with return_sequences=True): Similar to the previous LSTM layer, this layer is configured to return sequences instead of a single output. It aids in decoding the input representation and generating the output sequence, contributing to the accurate translation of the text.
-
-Dense Layer: The final dense layer applies a softmax activation function to produce a probability distribution over the Hindi vocabulary. It selects the most likely Hindi word for each position in the output sequence, ensuring the generated translations are linguistically appropriate.
+    Dense Layer: The final dense layer applies a softmax activation function to produce a probability distribution over the Hindi vocabulary. 
+    It selects the most likely Hindi word for each position in the output sequence, ensuring the generated translations are linguistically appropriate.
 
 Model Saving
-Once the model is trained, you can save it for future use. You can accomplish this by using the save() method, which saves the entire model to a file. To save the model, simply call model.save('NMTmodel'). 
+Once the model is trained, we save it for future use. We accomplish this by using the save() method, which saves the entire model to a file. To save the model, we call model.save('NMTmodel'). 
 
 
 # 2. News Articles Categorization:- 
@@ -144,3 +131,7 @@ The web application is built using the Streamlit library, which provides a user-
 
 Visualizations:
 The application presents two visualizations of the stock price data. Firstly, it displays a line chart comparing the closing price of the stock over time, along with the 100-day and 200-day moving averages. This chart helps users visualize the trends and patterns in the stock price data. Secondly, the application plots the original stock prices and the predicted stock prices on another line chart. This allows users to compare the actual prices with the model's predictions.
+
+# 1. Alzheimer Detection from Live Speech 
+Youtube link :- https://www.youtube.com/watch?v=Nbx6qjv7dMM&ab_channel=Vanshika
+Neurocare is an app that aims to detect and provide support for Alzheimer's disease through early detection and wellness features.Using a voice memo recorded by the patient, Neurocare's trained model classifies speech as either AD (Alzheimer's disease) or non-AD. This classification is based on lexical analysis of grammar and pause durations. The model calculates a mental state examination score, aiding in reaching a diagnosis.
