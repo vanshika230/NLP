@@ -53,7 +53,7 @@ Model Training: Multiple Models with Grid Search: The code trains multiple model
 
 Model Evaluation: The code evaluates the performance of each trained model on the testing data. For each model, it predicts the categories for the testing data using the predict() function and calculates various evaluation metrics such as accuracy, precision, recall, and F1 score using the classification_report() function from scikit-learn. The code also creates a confusion matrix for each model using the confusion_matrix() function and visualizes it using a heatmap (heatmap() function from seaborn).
 
-# Stock Price Prediction using LSTM
+## 3. Stock Price Prediction using LSTM deployed on Streamlit
 
 Link :- https://github.com/vanshika230/Stock_Price_Prediction
 
@@ -71,15 +71,15 @@ We split the training data into input (x_train) and output (y_train) sequences. 
 Model Architecture:
 Our LSTM model consists of four LSTM layers with varying numbers of units, followed by dropout layers to prevent overfitting, and a dense output layer. The architecture is as follows:
 
-LSTM layer with 50 units and return_sequences=True
-Dropout layer with a rate of 0.2
-LSTM layer with 60 units and return_sequences=True
-Dropout layer with a rate of 0.3
-LSTM layer with 80 units and return_sequences=True
-Dropout layer with a rate of 0.4
-LSTM layer with 120 units
-Dropout layer with a rate of 0.5
-Dense output layer with 1 unit
+    LSTM layer with 50 units and return_sequences=True
+    Dropout layer with a rate of 0.2
+    LSTM layer with 60 units and return_sequences=True
+    Dropout layer with a rate of 0.3
+    LSTM layer with 80 units and return_sequences=True
+    Dropout layer with a rate of 0.4
+    LSTM layer with 120 units
+    Dropout layer with a rate of 0.5
+    Dense output layer with 1 unit
 Model Compilation and Training:
 We compile the model using the Adam optimizer and the mean squared error (MSE) loss function. The model is trained on the prepared training data for 50 epochs.
 
@@ -92,7 +92,17 @@ The web application is built using the Streamlit library, which provides a user-
 Visualizations:
 The application presents two visualizations of the stock price data. Firstly, it displays a line chart comparing the closing price of the stock over time, along with the 100-day and 200-day moving averages. This chart helps users visualize the trends and patterns in the stock price data. Secondly, the application plots the original stock prices and the predicted stock prices on another line chart. This allows users to compare the actual prices with the model's predictions.
 
-# 1. Alzheimer Detection from Live Speech 
+## 4. Alzheimer Detection from Live Speech 
 Youtube link :- https://www.youtube.com/watch?v=Nbx6qjv7dMM&ab_channel=Vanshika
 Tech stack:- StanfordNLP, spaCy, NLTK, Python, Tensorflow 
 Neurocare is an app that aims to detect and provide support for Alzheimer's disease through early detection and wellness features.Using a voice memo recorded by the patient, Neurocare's trained model classifies speech as either AD (Alzheimer's disease) or non-AD. This classification is based on lexical analysis of grammar and pause durations. The model calculates a mental state examination score, aiding in reaching a diagnosis.
+
+## 5. Oizys- Mental Health Chatbot
+Youtube Link :- https://www.youtube.com/watch?v=W1e6aKjJFLo&ab_channel=Vanshika
+
+Tech stack:- Python, Dialogflow, Node.js
+
+This is a chatbot that will ask you about your problems indirectly and eventually find you solutions. The bot has been designed to generate empathy and positive emotions. I trained it using dialogflow agents to identify sentiments of the speaker by keywords and provide approproate solutions. 
+
+
+
