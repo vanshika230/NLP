@@ -1,6 +1,16 @@
 # NLP
+## 1. Document Question Answering 
+Link :- https://github.com/vanshika230/Document_Question_Answering/tree/main
 
-## 1. Neural Machine Translation 
+Tech Stack- Python, Langchain, FAISS, Huggingface
+
+Created text chunks and tokenized using Pypdf and Langchain library.
+
+Employed Hugging Face Instruct Embeddings to forEmbedding Creation for document data ingestion.
+
+Ingested data to FAISS database & utilized Streamlit to deploy the question answering system
+
+## 2. Neural Machine Translation 
 Link :- https://github.com/vanshika230/LGMVIP_DataScienceIntern/blob/main/NMT.ipynb
 
 Tech Stack :- Python, ScikitLearn, Tensorflow
@@ -32,7 +42,7 @@ Model Saving
 Once the model is trained, we save it for future use. We accomplish this by using the save() method, which saves the entire model to a file. To save the model, we call model.save('NMTmodel'). 
 
 
-## 2. News Articles Categorization:- 
+## 3. News Articles Categorization:- 
 Link:- https://github.com/vanshika230/iNeuron.ai/blob/main/NewsArticlesCategorization.ipynb
 
 Techstack:- Python, scikitlearn, Tensorflow Keras, NLTK
@@ -53,7 +63,7 @@ Model Training: Multiple Models with Grid Search: The code trains multiple model
 
 Model Evaluation: The code evaluates the performance of each trained model on the testing data. For each model, it predicts the categories for the testing data using the predict() function and calculates various evaluation metrics such as accuracy, precision, recall, and F1 score using the classification_report() function from scikit-learn. The code also creates a confusion matrix for each model using the confusion_matrix() function and visualizes it using a heatmap (heatmap() function from seaborn).
 
-## 3. Stock Price Prediction using LSTM deployed on Streamlit
+## 4. Stock Price Prediction using LSTM deployed on Streamlit
 
 Link :- https://github.com/vanshika230/Stock_Price_Prediction
 
